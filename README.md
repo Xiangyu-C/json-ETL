@@ -8,7 +8,7 @@ While you’re at it, they would also want you to create a user table that would
 
 ## My approach:
 `check files in data folder
- if contains json files:
+ if contains json files:  \n
      data = json.load(file)
  normalized the value of orders key and make a dataframe
  and append to a list
