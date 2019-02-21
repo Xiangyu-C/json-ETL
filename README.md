@@ -7,17 +7,17 @@ While you’re at it, they would also want you to create a user table that would
 **Note:** Keep in mind that the newly created tables have to be sanely structured and those steps should be reproducible with the expectation that the **ETL would run daily**.
 
 ## My approach:
-`check files in data folder
- if contains json files:  \n
-     data = json.load(file)
- normalized the value of orders key and make a dataframe
- and append to a list
-     all_dfs.append(json_normalzie(data['orders]))
- make a complete dataframe or we can process one at a time
-     complete_df = pd.concat(all_dfs)
- extract users information
- then save to postgresql
- orders.save_to_postgres
- users.save_to_postgres
+`check files in data folder  
+ if contains json files:  
+     data = json.load(file)   
+ normalized the value of orders key and make a dataframe   
+ and append to a list   
+     all_dfs.append(json_normalzie(data['orders]))   
+ make a complete dataframe or we can process one at a time   
+     complete_df = pd.concat(all_dfs)   
+ extract users information   
+ then save to postgresql   
+ orders.save_to_postgres   
+ users.save_to_postgres   
  `
  
